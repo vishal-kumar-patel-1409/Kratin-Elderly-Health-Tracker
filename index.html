@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kratin Elderly Health Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Kratin Elderly Health Tracker</h1>
+  </header>
+
+  <main>
+    <section id="medication-tracker">
+      <h2>Medication Tracker</h2>
+      <form id="medication-form">
+        <label for="medication-name">Medication Name:</label>
+        <input type="text" id="medication-name" required>
+        <label for="medication-time">Time to Take:</label>
+        <input type="time" id="medication-time" required>
+        <button type="submit">Add Medication</button>
+      </form>
+      <ul id="medication-list"></ul>
+    </section>
+
+    <section id="health-tracker">
+      <h2>Health Tracker</h2>
+      <form id="health-form">
+        <label for="weight">Weight (in kg):</label>
+        <input type="number" id="weight" min="1" step="0.1" required>
+        <label for="blood-pressure">Blood Pressure (mmHg):</label>
+        <input type="number" id="blood-pressure" min="1" required>
+        <button type="submit">Add Entry</button>
+      </form>
+      <ul id="health-list"></ul>
+    </section>
+
+    <section id="diabetes-tracker">
+      <h2>Diabetes Tracker</h2>
+      <form id="diabetes-form">
+        <label for="blood-sugar">Fasting Blood Sugar Level (in mg/dL):</label>
+        <input type="number" id="fasting-blood-sugar" min="1" required>
+        <label for="blood-sugar">After Meal Blood Sugar Level (in mg/dL):</label>
+        <input type="number" id="after-meal-blood-sugar" min="1" required>
+        <button type="submit">Add Reading</button>
+      </form>
+      <ul id="diabetes-list"></ul>
+    </section>
+
+    <section id="diabetes-tracker">
+      <h2>Symptom Tracker</h2>
+      <form id="symptom-form">
+        <div class="form-group">
+          <label for="symptom">Symptom</label>
+          <input type="text" id="symptom" required>
+        </div>
+        <button type="submit" class="btn">Track Symptom</button>
+      </form>
+      <ul id="symptom-list"></ul>
+    </section>
+    
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Kratin Elderly Health Tracker. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
